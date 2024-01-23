@@ -1,0 +1,78 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Cambria, serif;
+  display: flex;
+  justify-content: center;
+}
+p {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input,
+select,
+button {
+  margin: 5px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "headland one";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.result {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+}
+.breakdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.on-peak {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: rgb(149, 210, 154);
+  border-radius: 10px;
+  padding: 5%;
+}
+.off-peak {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: rgb(241, 160, 160);
+  border-radius: 10px;
+  padding: 5%;
+}
+.total-to-pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(47 , 160, 160);
+  color: white;
+  border-radius: 10px;
+  padding: 5%;
+}
+.focus-amount {
+  font-size: 45px;
+  margin: 0;
+  font-weight: bold;
+  align-self: center;
+}

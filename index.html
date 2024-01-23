@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estimated Hydro Bill Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <h1>Estimate your Hydro Bill</h1>
+        <label for="peak-kwh">Please enter kWh used inside peak hours:</label>
+        <input
+          type="number"
+          name="peak-kwh"
+          id="peak-kwh"
+          step="0.01"
+          placeholder="Usage inside Peak Hour (in kWh)"
+        />
+        <label for="off-peak-kwh"
+          >Please enter kWh used outside peak hours:</label
+        >
+        <input
+          type="number"
+          name="off-peak-kwh"
+          id="off-peak-kwh"
+          step="0.01"
+          placeholder="Usage outside Peak Hour (in kWh)"
+        />
+        <label for="off-peak-kwh"
+          >Please select your province of residence:</label
+        >
+        <select name="province" id="province">
+          <option value="ON">Ontario</option>
+          <option value="BC">British Columbia</option>
+        </select>
+        <button id="calculate">Calculate</button>
+        <div class="result"></div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
